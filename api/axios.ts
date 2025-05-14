@@ -62,7 +62,7 @@ api.interceptors.response.use(
         try {
           const refreshToken = getRefreshToken();
   
-          const response = await axios.post('admin/refreshtoken', {
+          const response = await axios.post('auth/refreshtoken', {
             refreshToken,
           });
   
