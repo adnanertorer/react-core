@@ -6,9 +6,14 @@ React projelerinizde hızlı başlangıç için bu core yapıyı doğrudan kulla
 Neler yapar? Süreci nasıl kolaylaştırır?
 
 `useFormManager` ve `useGenericGrid` gibi hook’lar
+
 Form bileşenleri (`TextField`, `AutocompleteInput`)
+
 Token bazlı auth context + provider
+
 Axios interceptor (refresh token destekli)
+
 Generic service interface
+
 Tam TypeScript desteği
 
