@@ -12,5 +12,3 @@ Axios interceptor (refresh token destekli)
 Generic service interface
 Tam TypeScript desteği
 
-
-git clone https://github.com/adnanertorer/react-core.git
