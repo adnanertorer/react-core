@@ -1,4 +1,4 @@
-# ⚙️ React Core – Temel Yapı Modülü
+React Core – Temel Yapı Modülü
 
 Projelerde sıkça kullanılan auth, form, hook, api ve servis yapılarını modülerleştirdim.  
 React projelerinizde hızlı başlangıç için bu core yapıyı doğrudan kullanabilirsiniz.
