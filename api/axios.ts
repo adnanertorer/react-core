@@ -10,9 +10,15 @@ const api = axios.create({
 });
 
 let isRefreshing = false;
-let failedQueue: any[] = [];
 
-const processQueue = (error: any, token: string | null = null) => {
+type FailedRequest<TError = unknown> = {
+  resolve: (token: string | null) => void;
+  reject: (error: TError) => void;
+};
+
+let failedQueue: FailedRequest<AxiosError | Error>[] = [];
+
+const processQueue = (error: AxiosError | Error | null, token: string | null = null) => {
     failedQueue.forEach((prom) => {
       if (error) {
         prom.reject(error);
