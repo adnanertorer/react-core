@@ -1,5 +1,5 @@
 // api/config.ts
-import { ApiConfig } from "./ApiConfig";
+import type { ApiConfig } from "./ApiConfig";
 
 let config: ApiConfig;
 
