@@ -79,7 +79,7 @@ api.interceptors.response.use(
           originalRequest.headers.Authorization = `Bearer ${accessToken}`;
           return api(originalRequest);
         } catch (refreshError) {
-          processQueue(refreshError, null);
+          processQueue(refreshError as AxiosError | Error | null, null);
           clearToken();
           window.location.href = '/login';
           return Promise.reject(refreshError);
@@ -95,7 +95,8 @@ api.interceptors.response.use(
     }
     
   );
-  
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function handle400Error(data: any) {
     if (Array.isArray(data)) {
       data.forEach((res: { code: string; name: string }) => {
