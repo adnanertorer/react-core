@@ -1,19 +1,28 @@
-React Core – Temel Yapı Modülü
+# React Core
 
-Projelerde sıkça kullanılan auth, form, hook, api ve servis yapılarını modülerleştirdim.  
-React projelerinizde hızlı başlangıç için bu core yapıyı doğrudan kullanabilirsiniz.
+A modular, developer-friendly React boilerplate built to reduce repetitive code and speed up project setup.
 
-Neler yapar? Süreci nasıl kolaylaştırır?
+# Features
 
-`useFormManager` ve `useGenericGrid` gibi hook’lar
+- Modular and scalable architecture
+- Built-in form manager (`useFormManager`)
+- Generic data grid hook (`useGenericGrid`)
+- Axios interceptor with refresh token support
+- Authentication context with provider
+- TypeScript-based reusable form components
+- Generic service layer for API communication
+- Easy-to-extend structure for rapid development
 
-Form bileşenleri (`TextField`, `AutocompleteInput`)
+# Why use this?
 
-Token bazlı auth context + provider
+This core module was created to avoid writing the same boilerplate code in every React project. It helps you:
 
-Axios interceptor (refresh token destekli)
+- Save time when starting a new project
+- Maintain clean, organized code
+- Focus more on business logic rather than setup
 
-Generic service interface
+# Installation
 
-Tam TypeScript desteği
+Clone the repository:
 
+git clone https://github.com/adnanertorer/react-core.git
